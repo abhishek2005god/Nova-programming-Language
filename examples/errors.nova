@@ -1,0 +1,3 @@
+// Intentionally invalid operation for demonstration of error reporting
+let a = 10;
+display(a + "incompatible");

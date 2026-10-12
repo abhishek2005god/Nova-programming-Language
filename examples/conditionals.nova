@@ -1,0 +1,17 @@
+let age = 20;
+
+when (age >= 18) {
+    display("Eligible");
+} otherwise {
+    display("Not eligible");
+}
+
+let marks = 85;
+
+when (marks >= 90) {
+    display("Grade A");
+} otherwise when (marks >= 75) {
+    display("Grade B");
+} otherwise {
+    display("Grade C");
+}

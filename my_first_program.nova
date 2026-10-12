@@ -1,0 +1,49 @@
+// My First Nova Program!
+
+display("========================================");
+display("       Welcome to Nova Programming!     ");
+display("========================================");
+
+// 1. Variables
+let user_name = "Abhishek";
+let score = 95;
+
+display("Coder: " + user_name);
+display("Score: " + str(score));
+
+// 2. Conditional Statement
+when (score >= 90) {
+    display("Status: Outstanding performance! (Grade A)");
+} otherwise when (score >= 75) {
+    display("Status: Good job! (Grade B)");
+} otherwise {
+    display("Status: Keep practicing!");
+}
+
+// 3. Custom Function (Event)
+Event calculate_bonus(points, multiplier) {
+    return points * multiplier;
+}
+
+let total = calculate_bonus(score, 2);
+display("Total score with 2x bonus:");
+display(total);
+
+// 4. A While Loop
+display("Counting up to 3:");
+let counter = 1;
+while (counter <= 3) {
+    display("Step " + str(counter));
+    counter = counter + 1;
+}
+
+// 5. Lists and Built-in Collections
+let tech_stack = ["Lexer", "Parser", "Evaluator"];
+push(tech_stack, "Runtime");
+
+display("Nova Architecture Components:");
+display(tech_stack);
+
+display("========================================");
+display("Program completed successfully!");
+display("========================================");

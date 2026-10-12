@@ -1,0 +1,65 @@
+// Classic algorithms implemented in Nova
+
+// 1. Greatest Common Divisor (Euclidean algorithm)
+Event gcd(a, b) {
+    while (b != 0) {
+        let temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+// 2. Integer power (base ^ exp)
+Event power(base, exp) {
+    let result = 1;
+    let i = 0;
+    while (i < exp) {
+        result = result * base;
+        i = i + 1;
+    }
+    return result;
+}
+
+// 3. Primality test
+Event is_prime(n) {
+    when (n <= 1) {
+        return false;
+    }
+    let d = 2;
+    while (d * d <= n) {
+        when (n % d == 0) {
+            return false;
+        }
+        d = d + 1;
+    }
+    return true;
+}
+
+// 4. Sum of digits
+Event sum_digits(n) {
+    let total = 0;
+    while (n > 0) {
+        let digit = n % 10;
+        total = total + digit;
+        n = (n - digit) / 10;
+    }
+    return total;
+}
+
+display("--- Nova Algorithms Demo ---");
+
+display("GCD of 48 and 18:");
+display(gcd(48, 18));
+
+display("2 raised to power 10:");
+display(power(2, 10));
+
+display("Is 29 prime?");
+display(is_prime(29));
+
+display("Is 30 prime?");
+display(is_prime(30));
+
+display("Sum of digits of 12345:");
+display(sum_digits(12345));

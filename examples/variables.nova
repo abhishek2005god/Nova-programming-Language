@@ -1,0 +1,6 @@
+let a = 12;
+let b = 4;
+
+display(a + b);
+display(a * b);
+display(a / b);

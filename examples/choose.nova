@@ -1,0 +1,29 @@
+let number = 2;
+
+choose (number) {
+    option 1 {
+        display("One");
+    }
+
+    option 2 {
+        display("Two");
+    }
+
+    fallback {
+        display("Other");
+    }
+}
+
+let day = 5;
+
+choose (day) {
+    option 1 {
+        display("Monday");
+    }
+    option 2 {
+        display("Tuesday");
+    }
+    fallback {
+        display("Weekend or other day");
+    }
+}

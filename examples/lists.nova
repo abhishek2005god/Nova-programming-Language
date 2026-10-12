@@ -1,0 +1,47 @@
+// Nova Lists / Arrays Demonstration
+
+// 1. Creation and display
+let numbers = [10, 20, 30, 40];
+display("Original list:");
+display(numbers);
+
+// 2. Indexing
+display("First element:");
+display(numbers[0]);
+
+display("Third element:");
+display(numbers[2]);
+
+// 3. Index modification
+numbers[1] = 99;
+display("List after numbers[1] = 99:");
+display(numbers);
+
+// 4. Built-in len()
+display("List length:");
+display(len(numbers));
+
+// 5. Built-in push()
+push(numbers, 50);
+display("List after push(numbers, 50):");
+display(numbers);
+
+// 6. Built-in pop()
+let removed = pop(numbers);
+display("Popped element:");
+display(removed);
+display("List after pop:");
+display(numbers);
+
+// 7. List concatenation with +
+let combined = [1, 2] + [3, 4, 5];
+display("Combined list ([1, 2] + [3, 4, 5]):");
+display(combined);
+
+// 8. Iterating over list with while
+display("Iterating through list:");
+let i = 0;
+while (i < len(combined)) {
+    display(combined[i]);
+    i = i + 1;
+}

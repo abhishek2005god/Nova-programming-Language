@@ -1,0 +1,22 @@
+Event add(a, b) {
+    return a + b;
+}
+
+display(add(10, 20));
+
+Event greet(name) {
+    display("Hello, " + name);
+}
+
+greet("Nova");
+
+// Demonstrating lexical scoping and closures
+Event make_adder(x) {
+    Event adder(y) {
+        return x + y;
+    }
+    return adder;
+}
+
+let add5 = make_adder(5);
+display(add5(10));
